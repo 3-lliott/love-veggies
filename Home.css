@@ -11,7 +11,9 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, blue, lightblue);
+  background: blue; /* fallback */
+  background: -webkit-linear-gradient(left, blue, lightblue); /* older browsers */
+  background: linear-gradient(to right, blue, lightblue); /* standard syntax */
 }
 
 .wrapper {
